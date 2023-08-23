@@ -1,5 +1,5 @@
 def main():
-    shopping_list = []
+    lista = []
 
     while True:
         print("\n--- Lista de Compras ---")
@@ -9,42 +9,42 @@ def main():
         print("4. Listar Itens")
         print("5. Sair")
         
-        choice = input("Escolha uma opção: ")
+        escolha = input("Escolha uma opção: ")
 
-        if choice == "1":
+        if escolha == "1":
             item = input("Digite o nome do item a ser adicionado: ")
-            shopping_list.append(item)
+            lista.append(item)
             print(f"{item} foi adicionado à lista.")
 
-        elif choice == "2":
+        elif escolha == "2":
             print("\n--- Itens na Lista ---")
-            for index, item in enumerate(shopping_list):
+            for index, item in enumerate(lista):
                 print(f"{index + 1}. {item}")
-            item_number = int(input("Digite o número do item que deseja editar: ")) - 1
-            if 0 <= item_number < len(shopping_list):
-                new_item = input("Digite o novo nome do item: ")
-                shopping_list[item_number] = new_item
+            numero_item = int(input("Digite o número do item que deseja editar: ")) - 1
+            if 0 <= numero_item < len(lista):
+                novo_iten = input("Digite o novo nome do item: ")
+                lista[numero_item] = novo_iten
                 print("Item editado com sucesso.")
             else:
                 print("Número de item inválido.")
 
-        elif choice == "3":
+        elif escolha == "3":
             print("\n--- Itens na Lista ---")
-            for index, item in enumerate(shopping_list):
+            for index, item in enumerate(lista):
                 print(f"{index + 1}. {item}")
-            item_number = int(input("Digite o número do item que deseja apagar: ")) - 1
-            if 0 <= item_number < len(shopping_list):
-                removed_item = shopping_list.pop(item_number)
-                print(f"{removed_item} foi removido da lista.")
+            numero_item = int(input("Digite o número do item que deseja apagar: ")) - 1
+            if 0 <= numero_item < len(lista):
+                remover_item = lista.pop(numero_item)
+                print(f"{remover_item} foi removido da lista.")
             else:
                 print("Número de item inválido.")
 
-        elif choice == "4":
+        elif escolha == "4":
             print("\n--- Itens na Lista ---")
-            for index, item in enumerate(shopping_list):
+            for index, item in enumerate(lista):
                 print(f"{index + 1}. {item}")
 
-        elif choice == "5":
+        elif escolha == "5":
             print("Saindo...")
             break
 

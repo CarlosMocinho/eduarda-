@@ -17,12 +17,12 @@ janela.geometry("155x150")
 
 ########  texto que vai em cada coisa  ########
 
-texto1 = Label(janela, text = "digite o seu nome:")
-caixa = Entry(janela)
-texto2 = Label(janela, text = "digite oque voce quer dizer:")
-caixa2 = Entry(janela)
-botao = Button(janela, text = "exibir", command = exibirtxt )
-texto3 = Label(janela, text = "oi" )
+texto1 = Label(janela, text = "digite o seu nome:") #basicamente texto
+caixa = Entry(janela) #coletar informação
+texto2 = Label(janela, text = "digite oque voce quer dizer:") #basicamente texto
+caixa2 = Entry(janela) #coletar informação
+botao = Button(janela, text = "exibir", command = exibirtxt ) #exibir função texto3
+texto3 = Label(janela, text = "" ) #aonde vai exibir
 
 ######## parte visual e onde vai ficar cada coisa ########
 

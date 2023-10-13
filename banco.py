@@ -17,7 +17,6 @@ class ContaBancaria:
     def ver_saldo(self):
         print(f"Saldo atual da conta de {self.titular}: R${self.saldo:.2f}")
 
-# Criando uma conta para um titular fictício chamado "João"
 conta_joao = ContaBancaria("João")
 
 while True:
